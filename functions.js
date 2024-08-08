@@ -50,7 +50,7 @@ function func4(a, b=0){
 }
 func4(0, 4);
 
-// rest parameter- can have any no. of arguments 
+// rest parameter- can have any no. of arguments , use spread operator (...)
 function func5(a, ...b){
     console.log(a);
     console.log(b);

@@ -63,3 +63,7 @@ console.log(Parrot.food)
 //should use "Prototype " to add new property to object contrsuctor
 birds.prototype.food="food"
 console.log(Parrot.food)
+
+// Comparing two JavaScript objects always returns false
+// === checks for equality of value and type, whereas == checks only for value
+console.log(Parrot===Penguin)

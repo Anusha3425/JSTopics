@@ -4,6 +4,7 @@ function callBackEx (someFunc){
     console.log(someFunc) 
 }
 
+//while passing a function, we should not pass (), mycallBack() willbe wrong approach
 function ListPlanets(a, b, mycallBack){
     let Planet=a+" "+b;
     mycallBack(Planet);

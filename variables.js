@@ -14,12 +14,16 @@ function v1(){
 v1();
 console.log(message);
 
-// re-declaration is possible
+// re-declaration is possible. we cannot re-declare a variable declared with let or const
 // can be hoisted
 // scope- functional or global
 
 
 // Variable declaration using let
+
+// Variables declared with let have Block Scope
+// Variables declared with let must be Declared before use
+// Variables declared with let cannot be Redeclared in the same scope
 
 // console.log(b);
 let b=2;
@@ -27,6 +31,7 @@ let message2="Outside func";
 function v2(){
     let message2="inside func";
     console.log(message2);
+    // message2="redeclared"
 }
 v2();
 console.log(message2);
