@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="eventStyle.css"/>
+    </head>
+<body>
+<h1>JavaScript HTML Events</h1>
+
+<!-- onclick()- on clicking on the button, it will do some specified tasks , 
+ like the below code will show the date and time on clicking the button-->
+
+<button onclick="document.getElementById('htmlevent').innerHTML=Date()">The time is?</button>
+
+<button id="button1">Click me!</button>
+
+<script>
+    function upperCase() {
+        let x= document.getElementById("name");
+        x.value=x.value.toUpperCase();
+    }
+</script>
+<input type="text" id="name" onchange="upperCase()">
+
+<!-- This will write button is clicked in the console  -->
+
+ <button ondblclick="alert('Button clicked two times')">Click me two times</button>
+ 
+ <!-- on double click will perform specified task on double click -->
+
+ <p id="htmlevent"></p>
+
+<style>
+    .colorchange {
+        color:rgb(171, 15, 122);
+    }
+    .colorchange:hover {
+        color: black;
+    }
+    /* hover will change the style of an element on mouse hover: this is a css property */
+</style>
+
+<!-- onmouseover: event arised when the mouse is over the element, it will do specified task -->
+<div onmouseover="console.log('color changed')" class="colorchange">Hover on me to change color</div>
+<!-- All the above examples are inline event handlers: inside html file -->
+
+<div id="box1">Hold me </div>
+
+<script src="DomEvents.js"></script>
+</body>
+</html>
