@@ -25,7 +25,7 @@ function func2(){
 
 //functions stored in variables can't be hoisted
 
-//Array functions: ES6 - No need to use name function, return and curly braces, represented by '=>'
+//Arrow functions: ES6 - No need to use name function, return and curly braces, represented by '=>'
 
 const x=(a,b)=>a+b;
 console.log(x(2,4))

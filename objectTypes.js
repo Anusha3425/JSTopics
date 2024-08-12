@@ -7,7 +7,7 @@ fruits.weight="2-3kg"
 fruits.price="75rs"
 
 const x=fruits;
-// Here x is not copy of fruits, it's fruits
+// Here x is not copy of fruits, it's the object fruits
 console.log(x.price)
 
 console.log(fruits);

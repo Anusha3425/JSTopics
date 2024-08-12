@@ -3,7 +3,7 @@
 // \" for double quotes
 // \\ for backslash
 
-let message= " Hi, Welcome to planet \"Earth\" hear. To go back press to \"Earth\" '\\'.    "
+let message= " Hi, Welcome to planet \"Earth\" hear. To go back to \'Earth\' press '\\'.    "
 console.log(message)
 
 // Templates are strings enclosed in backticks, they allow multi lines, and to include variable with ${}

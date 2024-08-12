@@ -91,7 +91,7 @@ console.log(num)
 
 //filter()- creates new array with elemets passing the test
 const canVote=num.filter(Voterfunc);
-function Voterfunc(value, index, array){
+function Voterfunc(value){
     return value>18;
 }
 console.log(canVote)
