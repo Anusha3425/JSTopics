@@ -1,0 +1,6 @@
+{
+    "planets":{"name":"Earth","place":"3"},
+    "fruits":["watermelon", "Mango"],
+    "cookies enabled":true,
+    "localstoarge":null
+}
