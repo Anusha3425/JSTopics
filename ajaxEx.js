@@ -13,20 +13,34 @@
 // XHR: XMLHttpRequest
 
 function loadDoc() {
+  // create xhr object
     const xhttp = new XMLHttpRequest();
+    // what to do when progress is ready
     xhttp.onload = function() {
       document.getElementById("demo").innerHTML = this.responseText;
       document.getElementById("h1").style.color="blue";
+      let parsedRes=JSON.parse(this.responseText);
+      console.log(parsedRes);
+      let List=document.getElementById("list");
+      let str="";
+      for(key in parsedRes){
+        str+=`<li>parsedRes[key].employee_name</li>`;
+      }
+      parsedRes.innerHTML=str;
       console.log(xhttp)
     //   document.getElementById("demo").style.backgroundColor="pink"
       }
-    xhttp.open("GET", "ajax_info.txt", true);
+
+      // open the xhr object
+    xhttp.open("GET", "http://dummy.restapiexample.com/api/v1/employees", true);
+    // send the request
     xhttp.send();
   }
 
 function onready1() {
     const xhttp=new XMLHttpRequest();
     xhttp.onreadystatechange=function(){
+      console.log("ready State is", this.readyState);
         if(this.readyState==4 && this.status==200){
             document.getElementById("btn2").innerHTML=this.responseText;
         }
@@ -48,12 +62,16 @@ function onready2() {
 
 function loadDocPost() {
     const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "http://dummy.restapiexample.com/api/v1/create", true);
+    xhttp.getResponseHeader('Content-type','application/json');
     xhttp.onload = function() {
       document.getElementById("btn4").innerHTML = this.responseText;
       console.log(xhttp)
+      console.log(this.responseText);
       }
-    xhttp.open("POST", "ajax_info.txt", true);
-    xhttp.send();
+
+  params=`{"name":"Tom123","salary":"200","age":"21" }`;
+    xhttp.send(params);
   }
 
 //   to put data like HTML form use setRequestHeader();

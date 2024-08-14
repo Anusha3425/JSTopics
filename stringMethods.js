@@ -7,6 +7,7 @@ let message= " Hi, Welcome to planet \"Earth\" hear. To go back to \'Earth\' pre
 console.log(message)
 
 // Templates are strings enclosed in backticks, they allow multi lines, and to include variable with ${}
+// Template strings are introduced in ES6
 
 let template=`This is a template
  ${message}`

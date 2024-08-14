@@ -28,7 +28,13 @@ function func2(){
 //Arrow functions: ES6 - No need to use name function, return and curly braces, represented by '=>'
 
 const x=(a,b)=>a+b;
+
+// Arrow functions can be written with or without parameters, and the parentheses can be omitted in certain cases
+let str1="Hi, "
+let str2="Good Evening"
+const str=()=>str1+str2;
 console.log(x(2,4))
+console.log(str())
 
 // new function constructor
 

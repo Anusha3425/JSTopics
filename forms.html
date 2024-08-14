@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form onsubmit="submitfunc()" onreset="resetfunc()">
+        <label for="fname">Full Name: </label><br>
+        <input type="text" id="fname" name="fname">
+        <input type="text" id="drag"><br>
+        <label for="mailId">Mail Id: </label><br>
+        <input type="email" id="mailId" name="mailId"><br>
+        <label for="gender" id="gender">Gender</label><br>
+        <input type="radio" name="gender" value="Female"><label for="Female">Female</label>
+        <input type="radio" name="gender" value="Male"><label for="Male">Male</label><br><br>
+        <label for="address">Address:</label><br>
+        <input type="text" name="address" id="address"><br>
+        <input type="submit" id="submit" name="Submit" value="Submit Form">
+        <input type="reset" id="reset" name="Reset" value="Reset Form">
+    </form>
+    <script src="forms.js"></script>
+</body>
+</html>

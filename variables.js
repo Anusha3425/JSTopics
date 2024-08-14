@@ -18,7 +18,7 @@ console.log(message);
 // can be hoisted
 // scope- functional or global
 
-
+// Before ES6 version, var was in use, in ES6 let and const introduced
 // Variable declaration using let
 
 // Variables declared with let have Block Scope
