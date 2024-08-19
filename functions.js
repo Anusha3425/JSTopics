@@ -25,7 +25,11 @@ function func2(){
 
 //functions stored in variables can't be hoisted
 
-//Arrow functions: ES6 - No need to use name function, return and curly braces, represented by '=>'
+// Arrow functions: ES6 - No need to use name function, return and curly braces, represented by '=>'
+// they are also called lambda functions.
+
+// Arrow functions provide a lexical this binding. It means, they inherit the value of “this” from the enclosing scope. 
+// This feature can be advantageous when dealing with event listeners or callback functions where the value of “this” can be uncertain.
 
 const x=(a,b)=>a+b;
 
@@ -55,6 +59,7 @@ function func4(a, b=0){
     console.log(2*a+b/2);
 }
 func4(0, 4);
+func4(9)
 
 // rest parameter- can have any no. of arguments , use spread operator (...)
 function func5(a, ...b){

@@ -95,3 +95,26 @@ function Voterfunc(value){
     return value>18;
 }
 console.log(canVote)
+
+
+// find()- it retrieve the first element that passes the test, if no such items found, returns undefined.
+const above18=num.find(element => element>18) 
+console.log(above18)
+
+// every()- checks if all elements can satisfy a condition
+const allabove18=num.every(element=>element>18);
+console.log(allabove18)
+
+const allabove0=num.every(element=>element>0)
+console.log(allabove0)
+
+// some()- checks if some of the elements pass a condition
+const someabove18=num.some(element=>element>18);
+console.log(someabove18)
+
+// reduce()- reduces an array as per  function
+const num1=[1, 2, 4, 6, 8];
+const reduce_func= (a, b) => {
+    return a+b;
+}
+console.log(num1.reduce(reduce_func))
