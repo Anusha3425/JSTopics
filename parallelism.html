@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallelism</title>
+</head>
+<body>
+    <h1>Parallelism Example</h1>
+    <h3> First task and second task runs simultaneously</h3>
+    <script>
+        const first=new Worker('parallelism.js');
+        const second= new Worker('parallelism.js');
+
+        first.onmessage=function(event){
+            console.log('First task', event.data)
+        }
+
+        second.onmessage=function(event){
+            console.log('Second task', event.data)
+        }
+
+        first.postMessage('start')
+        second.postMessage('start')
+    </script>
+</body>
+</html>

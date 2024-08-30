@@ -41,4 +41,4 @@ box1.onmouseup = () => {
     box1.innerHTML="Hold me";
     box1.style,color="Black";
 }
-// onmousedown, onmouseup methods are used to show and hide passwords in reality
+// onmousedown, onmouseup methods are used to show and hide passwords

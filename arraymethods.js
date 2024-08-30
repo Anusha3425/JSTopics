@@ -45,12 +45,12 @@ console.log(arr)
 
 //flatMap()-first maps all elements of an array, then create new array
 const mapArr=arr.flatMap(x=>[x, x+1]);
-console.log(mapArr)
+console.log(mapArr, "flatmap")
 
 //splice() - splice removes elemets without leaving holes
 // splice(position, no. of elements)
 arr.splice(2,3)
-console.log(arr)
+console.log(arr, "splice")
 
 //slice() - slices out a piece of an array into a new array, it does not alters array
 const slicesArr=arr.slice(0,3)
@@ -109,10 +109,12 @@ const allabove0=num.every(element=>element>0)
 console.log(allabove0)
 
 // some()- checks if some of the elements pass a condition
+// it returns boolean, true or false
 const someabove18=num.some(element=>element>18);
 console.log(someabove18)
 
-// reduce()- reduces an array as per  function
+// reduce()- reduces an array as per function
+// reduce() method executes a reducer function on each element of the array, resulting in a single output value
 const num1=[1, 2, 4, 6, 8];
 const reduce_func= (a, b) => {
     return a+b;

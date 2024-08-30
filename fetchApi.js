@@ -12,7 +12,7 @@
 
 fetch('https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits')
     .then(response => response.json())
-    .then(commits=> alert(`Hello ${commits[5].author.login}`))
+    .then(commits=> console.log(`Hello ${commits[5].author.login}`))
 
 // fetch takes the url, then it will convert the response to json, then once the process is done, it will alert the msg.
 
@@ -30,7 +30,7 @@ let options={
     Headers: {"Content-type": "application/json"},
     body: JSON.stringify({
         title:'FetchAPI',
-        body: 'Example',
+        desc: 'Example',
         userId:2002
     })
 }

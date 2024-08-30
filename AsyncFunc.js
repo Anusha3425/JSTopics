@@ -1,7 +1,17 @@
 // The keyword async before a function makes the function return a promise
 // The word await makes the function to wait for promise
+let something=document.getElementById("image");
 
-async function showJS(){
+// async function display(){
+//     let promiseEx1=new Promise(function(resolve, reject){
+//         resolve("Await in Asynchronous asks to wait for a function to finish");
+//     });
+
+//     document.getElementById("awaitEx").innerHTML=await promiseEx1;
+// }
+// display();
+
+something.onclick=async function showJS(){
     // document.getElementById("image").innerHTML="Background-color is Changed";
     document.getElementById("div1").style.backgroundColor="aliceblue";
     return "Background-color is Changed";
